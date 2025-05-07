@@ -1,0 +1,6 @@
+{
+    "robot.language-server.python": "C:\\Program Files\\Python312\\python.exe",
+    "robot.language-server.lint.enabled": true,
+    "robot.language-server.formatting.enabled": true,
+    "editor.formatOnSave": true
+}
