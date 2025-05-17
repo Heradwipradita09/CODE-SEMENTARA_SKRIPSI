@@ -37,8 +37,7 @@ ${TOMBOL_TUTUP_STATUS}              xpath=//*[@id="ModalStatusKonten"]/div/div/d
 ${TAMBAH_KONTEN_BUTTON}             xpath=//a[@href="/publishing/add" and contains(text(),"Tambah Konten")]
 ${KONTEN_TEXTAREA}                  xpath=//textarea[@placeholder='Ketikan kontennya disini...']
 ${CURRENT_TIME}=                    Get Time    result_format=%Y%m%d%H%M%S
-${JUDUL_KONTEN}                     DIMSUM UDANG MENTAI
-
+${JUDUL_KONTEN}                     DIMSUM MENTAI UDANG SPICY
 
 
 # Upload Media Modul Penerbitan

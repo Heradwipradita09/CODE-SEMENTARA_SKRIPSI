@@ -1,1426 +1,904 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.12.5 on win32)" generated="2025-05-03T19:47:02.002885" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.12.5 on win32)" generated="2025-05-07T18:17:44.277379" rpa="false" schemaversion="5">
 <suite id="s1" name="ModulKampanye Penerbitan Laporan" source="D:\UNTUK SKRIPSI\BISMILLAH BAB_4\TestingRobotFramework\ModulKampanye_Penerbitan_Laporan.robot">
 <kw name="Buka Aplikasi dan Login" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:02.884996" level="INFO">Opening browser 'Chrome' to base url 'https://app.sinariumkm.id/'.</msg>
+<msg time="2025-05-07T18:17:45.579380" level="INFO">Opening browser 'Chrome' to base url 'https://app.sinariumkm.id/'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-03T19:47:02.883995" elapsed="5.935244"/>
+<status status="PASS" start="2025-05-07T18:17:45.578379" elapsed="18.816001"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-05-03T19:47:08.820241" elapsed="0.131997"/>
+<status status="PASS" start="2025-05-07T18:18:04.395381" elapsed="3.988003"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@placeholder='628xxx']</arg>
 <arg>timeout=30s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:47:08.953240" elapsed="0.142002"/>
+<status status="PASS" start="2025-05-07T18:18:08.385392" elapsed="0.478988"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:09.096241" level="INFO">Typing text '6282122442631' into text field 'xpath=//input[@placeholder='628xxx']'.</msg>
+<msg time="2025-05-07T18:18:08.866379" level="INFO">Typing text '6282122442631' into text field 'xpath=//input[@placeholder='628xxx']'.</msg>
 <arg>xpath=//input[@placeholder='628xxx']</arg>
 <arg>${PHONE_NUMBER}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:47:09.095242" elapsed="0.312999"/>
+<status status="PASS" start="2025-05-07T18:18:08.865378" elapsed="1.216000"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:09.410244" level="INFO">Clicking button 'xpath=//button[text()='Log in SINARI']'.</msg>
+<msg time="2025-05-07T18:18:10.082380" level="INFO">Clicking button 'xpath=//button[text()='Log in SINARI']'.</msg>
 <arg>xpath=//button[text()='Log in SINARI']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:47:09.409242" elapsed="0.210997"/>
+<status status="PASS" start="2025-05-07T18:18:10.081378" elapsed="0.682003"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//*[@id="appCapsule"]/div/div[2]/form/ul/li/div/div/div/div[1]</arg>
 <arg>timeout=30s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:47:09.620239" elapsed="4.227713"/>
+<status status="PASS" start="2025-05-07T18:18:10.764379" elapsed="1.356999"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:28.849349" level="INFO">Slept 15 seconds.</msg>
+<msg time="2025-05-07T18:18:27.124516" level="INFO">Slept 15 seconds.</msg>
 <arg>15s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:13.847952" elapsed="15.001397"/>
+<status status="PASS" start="2025-05-07T18:18:12.122382" elapsed="15.002134"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:28.850350" level="INFO">Clicking button 'xpath=//*[@id="appCapsule"]/div/div[2]/form/button'.</msg>
+<msg time="2025-05-07T18:18:27.125520" level="INFO">Clicking button 'xpath=//*[@id="appCapsule"]/div/div[2]/form/button'.</msg>
 <arg>xpath=//*[@id="appCapsule"]/div/div[2]/form/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:47:28.849349" elapsed="0.215007"/>
+<status status="PASS" start="2025-05-07T18:18:27.125520" elapsed="1.431004"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:34.067463" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-07T18:18:33.558035" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:29.065355" elapsed="5.002108"/>
+<status status="PASS" start="2025-05-07T18:18:28.556524" elapsed="5.001511"/>
 </kw>
-<status status="PASS" start="2025-05-03T19:47:02.881997" elapsed="31.185466"/>
+<status status="PASS" start="2025-05-07T18:17:45.574379" elapsed="47.983656"/>
 </kw>
-<test id="s1-t1" name="Buka Tab Penerbitan" line="128">
+<test id="s1-t1" name="Buka Tab Penerbitan" line="126">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:34.069387" level="INFO">Membuka tab penerbitan</msg>
+<msg time="2025-05-07T18:18:33.561053" level="INFO">Membuka tab penerbitan</msg>
 <arg>Membuka tab penerbitan</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:34.069387" elapsed="0.000999"/>
+<status status="PASS" start="2025-05-07T18:18:33.560039" elapsed="0.001014"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:34.071387" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[4]/a[3]/div'.</msg>
+<msg time="2025-05-07T18:18:33.562040" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[4]/a[3]/div'.</msg>
 <arg>${TAB_PENERBITAN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:47:34.070386" elapsed="0.278011"/>
+<status status="PASS" start="2025-05-07T18:18:33.562040" elapsed="0.271998"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${BUTTON_PROFIL_SOSMED}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:47:34.350389" elapsed="0.079998"/>
+<status status="PASS" start="2025-05-07T18:18:33.835041" elapsed="0.074015"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:39.432780" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-07T18:18:38.911126" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:34.431386" elapsed="5.001394"/>
+<status status="PASS" start="2025-05-07T18:18:33.910041" elapsed="5.001085"/>
 </kw>
-<status status="PASS" start="2025-05-03T19:47:34.068387" elapsed="5.365394"/>
+<status status="PASS" start="2025-05-07T18:18:33.559040" elapsed="5.353077"/>
 </test>
-<test id="s1-t2" name="Uji Pilih Facebook Dan Instagram" line="136">
+<test id="s1-t2" name="Uji Pilih Facebook Dan Instagram Modul Penerbitan" line="134">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:39.439789" level="INFO">Profil sosial media dipilih</msg>
+<msg time="2025-05-07T18:18:38.916124" level="INFO">Profil sosial media dipilih</msg>
 <arg>Profil sosial media dipilih</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:39.439789" elapsed="0.000992"/>
+<status status="PASS" start="2025-05-07T18:18:38.915113" elapsed="0.001011"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${BUTTON_PROFIL_SOSMED}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:47:39.440781" elapsed="0.068004"/>
+<status status="PASS" start="2025-05-07T18:18:38.917120" elapsed="0.034001"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:39.509783" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[2]/div/div/div[1]/button'.</msg>
+<msg time="2025-05-07T18:18:38.953136" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[2]/div/div/div[1]/button'.</msg>
 <arg>${BUTTON_PROFIL_SOSMED}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:47:39.509783" elapsed="0.218010"/>
+<status status="PASS" start="2025-05-07T18:18:38.952121" elapsed="0.261001"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:41.729917" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-05-07T18:18:41.215148" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:39.728788" elapsed="2.001129"/>
+<status status="PASS" start="2025-05-07T18:18:39.214120" elapsed="2.001028"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:41.731904" level="INFO">Instagram dipilih</msg>
+<msg time="2025-05-07T18:18:41.216156" level="INFO">Instagram dipilih</msg>
 <arg>Instagram dipilih</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:41.730920" elapsed="0.000984"/>
+<status status="PASS" start="2025-05-07T18:18:41.216156" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${PILIH_INSTAGRAM}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:47:41.732900" elapsed="0.055001"/>
+<status status="PASS" start="2025-05-07T18:18:41.217167" elapsed="0.062990"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:41.794902" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T18:18:41.282171" level="INFO">Executing JavaScript:
 document.getElementById("radioAnggotaTim1")?.click()
 Without any arguments.</msg>
 <arg>document.getElementById("radioAnggotaTim1")?.click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:47:41.792903" elapsed="0.101002"/>
+<status status="PASS" start="2025-05-07T18:18:41.281156" elapsed="0.087002"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:43.896820" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-05-07T18:18:43.370782" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:41.894901" elapsed="2.001919"/>
+<status status="PASS" start="2025-05-07T18:18:41.369158" elapsed="2.001624"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:43.897818" level="INFO">Buka kembali modal</msg>
+<msg time="2025-05-07T18:18:43.371787" level="INFO">Buka kembali modal</msg>
 <arg>Buka kembali modal</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:43.897818" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:18:43.371787" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:43.899818" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[2]/div/div/div[1]/button'.</msg>
+<msg time="2025-05-07T18:18:43.373772" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[2]/div/div/div[1]/button'.</msg>
 <arg>${BUTTON_PROFIL_SOSMED}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:47:43.898821" elapsed="0.155001"/>
+<status status="PASS" start="2025-05-07T18:18:43.372771" elapsed="0.153546"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:46.057314" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-05-07T18:18:45.529641" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:44.056822" elapsed="2.000492"/>
+<status status="PASS" start="2025-05-07T18:18:43.528315" elapsed="2.001326"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:46.058316" level="INFO">Facebook dipilih</msg>
+<msg time="2025-05-07T18:18:45.530646" level="INFO">Facebook dipilih</msg>
 <arg>Facebook dipilih</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:46.058316" elapsed="0.000998"/>
+<status status="PASS" start="2025-05-07T18:18:45.530646" elapsed="0.001001"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${PILIH_FACEBOOK}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:47:46.060312" elapsed="0.055006"/>
+<status status="PASS" start="2025-05-07T18:18:45.532648" elapsed="0.072001"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:46.118320" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T18:18:45.606646" level="INFO">Executing JavaScript:
 document.getElementById("radioAnggotaTim0")?.click()
 Without any arguments.</msg>
 <arg>document.getElementById("radioAnggotaTim0")?.click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:47:46.117321" elapsed="0.068999"/>
+<status status="PASS" start="2025-05-07T18:18:45.605649" elapsed="0.080999"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:48.193311" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-05-07T18:18:47.694743" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:46.192320" elapsed="2.000991"/>
+<status status="PASS" start="2025-05-07T18:18:45.692650" elapsed="2.002093"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:48.194251" level="INFO">Buka kembali modal</msg>
+<msg time="2025-05-07T18:18:47.695727" level="INFO">Buka kembali modal</msg>
 <arg>Buka kembali modal</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:48.194251" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:18:47.695727" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:48.195252" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[2]/div/div/div[1]/button'.</msg>
+<msg time="2025-05-07T18:18:47.696742" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[2]/div/div/div[1]/button'.</msg>
 <arg>${BUTTON_PROFIL_SOSMED}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:47:48.195252" elapsed="0.158025"/>
+<status status="PASS" start="2025-05-07T18:18:47.696742" elapsed="0.154992"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:50.358189" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-05-07T18:18:49.854759" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:48.357258" elapsed="2.000931"/>
+<status status="PASS" start="2025-05-07T18:18:47.853732" elapsed="2.001027"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:50.359188" level="INFO">Modal sosial media ditutup</msg>
+<msg time="2025-05-07T18:18:49.855762" level="INFO">Modal sosial media ditutup</msg>
 <arg>Modal sosial media ditutup</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:50.359188" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:18:49.855762" elapsed="0.000000"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:50.361192" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T18:18:49.857765" level="INFO">Executing JavaScript:
 document.querySelector('#ModalAnggotaTim a')?.click()
 Without any arguments.</msg>
 <arg>document.querySelector('#ModalAnggotaTim a')?.click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:47:50.360189" elapsed="0.020004"/>
+<status status="PASS" start="2025-05-07T18:18:49.856768" elapsed="0.018004"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${TOMBOL_STATUS_KONTEN}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:47:50.380193" elapsed="0.068002"/>
+<status status="PASS" start="2025-05-07T18:18:49.875772" elapsed="0.067008"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:55.451768" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-07T18:18:54.944120" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:50.449194" elapsed="5.002574"/>
+<status status="PASS" start="2025-05-07T18:18:49.943769" elapsed="5.000351"/>
 </kw>
-<status status="PASS" start="2025-05-03T19:47:39.437782" elapsed="16.014906"/>
+<status status="PASS" start="2025-05-07T18:18:38.914118" elapsed="16.031005"/>
 </test>
-<test id="s1-t3" name="Uji Pilih Status Konten" line="172">
+<test id="s1-t3" name="Uji Pilih Status Konten" line="170">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:55.457691" level="INFO">Dropdown status konten dibuka</msg>
+<msg time="2025-05-07T18:18:54.948126" level="INFO">Dropdown status konten dibuka</msg>
 <arg>Dropdown status konten dibuka</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:55.457691" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:18:54.948126" elapsed="0.001001"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${TOMBOL_STATUS_KONTEN}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:47:55.458690" elapsed="0.043997"/>
+<status status="PASS" start="2025-05-07T18:18:54.949127" elapsed="0.068002"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:55.508694" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T18:18:55.019131" level="INFO">Executing JavaScript:
 document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
 Without any arguments.</msg>
 <arg>document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:47:55.506694" elapsed="0.057002"/>
+<status status="PASS" start="2025-05-07T18:18:55.018126" elapsed="0.029006"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:56.566284" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-07T18:18:56.053135" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:55.564702" elapsed="1.001582"/>
+<status status="PASS" start="2025-05-07T18:18:55.052131" elapsed="1.001004"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:56.567204" level="INFO">Status "Diterbitkan" dipilih</msg>
+<msg time="2025-05-07T18:18:56.054140" level="INFO">Status "Diterbitkan" dipilih</msg>
 <arg>Status "Diterbitkan" dipilih</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:56.567204" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:18:56.054140" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${STATUS_DITERBITKAN}</arg>
-<arg>timeout=10s</arg>
+<arg>timeout=15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:47:56.568220" elapsed="0.055990"/>
+<status status="PASS" start="2025-05-07T18:18:56.055141" elapsed="0.065991"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:56.626218" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T18:18:56.123152" level="INFO">Executing JavaScript:
 document.getElementById("Diterbitkan")?.click()
 Without any arguments.</msg>
 <arg>document.getElementById("Diterbitkan")?.click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:47:56.625206" elapsed="0.012017"/>
+<status status="PASS" start="2025-05-07T18:18:56.122130" elapsed="0.013997"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:57.639255" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-07T18:18:57.137678" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:56.638209" elapsed="1.001046"/>
+<status status="PASS" start="2025-05-07T18:18:56.137127" elapsed="1.000551"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:57.640257" level="INFO">Klik dropdown</msg>
+<msg time="2025-05-07T18:18:57.138670" level="INFO">Klik dropdown</msg>
 <arg>Klik dropdown</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:57.640257" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:18:57.138670" elapsed="0.000000"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:57.646256" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T18:18:57.141670" level="INFO">Executing JavaScript:
 document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
 Without any arguments.</msg>
 <arg>document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:47:57.645259" elapsed="0.016993"/>
+<status status="PASS" start="2025-05-07T18:18:57.139701" elapsed="0.012971"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:58.665075" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-07T18:18:58.154679" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:57.663254" elapsed="1.001821"/>
+<status status="PASS" start="2025-05-07T18:18:57.153672" elapsed="1.001007"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:58.665996" level="INFO">Status "Dijadwalkan" dipilih</msg>
+<msg time="2025-05-07T18:18:58.155681" level="INFO">Status "Dijadwalkan" dipilih</msg>
 <arg>Status "Dijadwalkan" dipilih</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:58.665996" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:18:58.155681" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${STATUS_DIJADWALKAN}</arg>
-<arg>timeout=10s</arg>
+<arg>timeout=15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:47:58.666998" elapsed="0.059004"/>
+<status status="PASS" start="2025-05-07T18:18:58.156668" elapsed="0.061007"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:58.729006" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T18:18:58.220675" level="INFO">Executing JavaScript:
 document.getElementById("Dijadwalkan")?.click()
 Without any arguments.</msg>
 <arg>document.getElementById("Dijadwalkan")?.click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:47:58.727001" elapsed="0.069997"/>
+<status status="PASS" start="2025-05-07T18:18:58.218678" elapsed="0.087996"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:47:59.799497" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-07T18:18:59.310181" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:58.799004" elapsed="1.000493"/>
+<status status="PASS" start="2025-05-07T18:18:58.308671" elapsed="1.001510"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:47:59.800511" level="INFO">Klik dropdown</msg>
+<msg time="2025-05-07T18:18:59.311184" level="INFO">Klik dropdown</msg>
 <arg>Klik dropdown</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:47:59.800511" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:18:59.311184" elapsed="0.000000"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:47:59.802519" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T18:18:59.313188" level="INFO">Executing JavaScript:
 document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
 Without any arguments.</msg>
 <arg>document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:47:59.801514" elapsed="0.027013"/>
+<status status="PASS" start="2025-05-07T18:18:59.312185" elapsed="0.060008"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:00.834591" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-07T18:19:00.375221" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:47:59.832522" elapsed="1.002069"/>
+<status status="PASS" start="2025-05-07T18:18:59.374192" elapsed="1.001029"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:00.835592" level="INFO">Status "Gagal" dipilih</msg>
+<msg time="2025-05-07T18:19:00.376188" level="INFO">Status "Gagal" dipilih</msg>
 <arg>Status "Gagal" dipilih</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:00.835592" elapsed="0.001016"/>
+<status status="PASS" start="2025-05-07T18:19:00.376188" elapsed="0.001018"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${STATUS_GAGAL}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:48:00.837607" elapsed="0.072987"/>
+<status status="PASS" start="2025-05-07T18:19:00.378191" elapsed="0.063999"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:00.912592" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T18:19:00.444187" level="INFO">Executing JavaScript:
 document.getElementById("Gagal")?.click()
 Without any arguments.</msg>
 <arg>document.getElementById("Gagal")?.click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:48:00.911592" elapsed="0.068006"/>
+<status status="PASS" start="2025-05-07T18:19:00.442190" elapsed="0.035998"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:01.982620" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-07T18:19:01.494730" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:00.981594" elapsed="1.001026"/>
+<status status="PASS" start="2025-05-07T18:19:00.493188" elapsed="1.001542"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:01.983606" level="INFO">Klik dropdown</msg>
+<msg time="2025-05-07T18:19:01.495735" level="INFO">Klik dropdown</msg>
 <arg>Klik dropdown</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:01.983606" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:19:01.495735" elapsed="0.000999"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:01.985608" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T18:19:01.498733" level="INFO">Executing JavaScript:
 document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
 Without any arguments.</msg>
 <arg>document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:48:01.984592" elapsed="0.024010"/>
+<status status="PASS" start="2025-05-07T18:19:01.496734" elapsed="0.025005"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:03.010747" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-07T18:19:02.524254" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:02.009600" elapsed="1.001147"/>
+<status status="PASS" start="2025-05-07T18:19:01.522740" elapsed="1.001514"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:03.012758" level="INFO">Klik tombol silang (x)</msg>
+<msg time="2025-05-07T18:19:02.526257" level="INFO">Klik tombol silang (x)</msg>
 <arg>Klik tombol silang (x)</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:03.011772" elapsed="0.000986"/>
+<status status="PASS" start="2025-05-07T18:19:02.525257" elapsed="0.001000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${TOMBOL_TUTUP_STATUS}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:48:03.012758" elapsed="0.063001"/>
+<status status="PASS" start="2025-05-07T18:19:02.526257" elapsed="0.064019"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:03.077758" level="INFO">Executing JavaScript:
+<msg time="2025-05-07T18:19:02.592273" level="INFO">Executing JavaScript:
 document.evaluate('//*[@id="ModalStatusKonten"]/div/div/div[1]/a', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
 Without any arguments.</msg>
 <arg>document.evaluate('//*[@id="ModalStatusKonten"]/div/div/div[1]/a', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:48:03.076758" elapsed="0.017006"/>
+<status status="PASS" start="2025-05-07T18:19:02.591259" elapsed="0.021007"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:08.096853" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-07T18:19:07.614892" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:03.094760" elapsed="5.002093"/>
+<status status="PASS" start="2025-05-07T18:19:02.613263" elapsed="5.001629"/>
 </kw>
 <doc>Menguji pemilihan status konten di tab Penerbitan</doc>
-<status status="PASS" start="2025-05-03T19:47:55.455691" elapsed="12.642083"/>
+<status status="PASS" start="2025-05-07T18:18:54.946122" elapsed="12.669773"/>
 </test>
-<test id="s1-t4" name="Uji Status Konten Tanpa Pengaturan Penjadwalan" line="227">
+<test id="s1-t4" name="Uji Status Konten Tanpa Pengaturan Penjadwalan" line="225">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:08.104781" level="INFO">Menambah konten tanpa penjadwalan</msg>
+<msg time="2025-05-07T18:19:07.618893" level="INFO">Menambah konten tanpa penjadwalan</msg>
 <arg>Menambah konten tanpa penjadwalan</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:08.104781" elapsed="0.000993"/>
+<status status="PASS" start="2025-05-07T18:19:07.618893" elapsed="0.001001"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:08.106773" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[4]/a[3]/div'.</msg>
+<msg time="2025-05-07T18:19:07.620894" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[4]/a[3]/div'.</msg>
 <arg>${TAB_PENERBITAN}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:08.106773" elapsed="0.199002"/>
+<status status="PASS" start="2025-05-07T18:19:07.619894" elapsed="0.219005"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:09.307886" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-07T18:19:08.841450" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:08.306776" elapsed="1.001110"/>
+<status status="PASS" start="2025-05-07T18:19:07.839898" elapsed="1.001552"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:09.309887" level="INFO">Clicking element 'xpath=//a[@href="/publishing/add" and contains(text(),"Tambah Konten")]'.</msg>
+<msg time="2025-05-07T18:19:08.842440" level="INFO">Clicking element 'xpath=//a[@href="/publishing/add" and contains(text(),"Tambah Konten")]'.</msg>
 <arg>${TAMBAH_KONTEN_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:09.308885" elapsed="0.350012"/>
+<status status="PASS" start="2025-05-07T18:19:08.842440" elapsed="0.290007"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:14.661715" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-07T18:19:14.135097" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:09.659893" elapsed="5.001822"/>
+<status status="PASS" start="2025-05-07T18:19:09.134448" elapsed="5.000649"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:14.662660" level="INFO">Konten diinput</msg>
+<msg time="2025-05-07T18:19:14.136084" level="INFO">Konten diinput</msg>
 <arg>Konten diinput</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:14.662660" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:19:14.136084" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${KONTEN_TEXTAREA}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:48:14.663660" elapsed="0.043006"/>
+<status status="PASS" start="2025-05-07T18:19:14.137117" elapsed="0.069976"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:14.709669" level="INFO">Typing text 'DIMSUM UDANG MENTAI' into text field 'xpath=//textarea[@placeholder='Ketikan kontennya disini...']'.</msg>
+<msg time="2025-05-07T18:19:14.208088" level="INFO">Typing text 'DIMSUM MENTAI UDANG SPICY' into text field 'xpath=//textarea[@placeholder='Ketikan kontennya disini...']'.</msg>
 <arg>${KONTEN_TEXTAREA}</arg>
 <arg>${JUDUL_KONTEN}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:14.708667" elapsed="0.465531"/>
+<status status="PASS" start="2025-05-07T18:19:14.208088" elapsed="0.493004"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:15.177198" level="INFO">Upload Media</msg>
+<msg time="2025-05-07T18:19:14.704094" level="INFO">Upload Media</msg>
 <arg>Upload Media</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:15.176201" elapsed="0.000997"/>
+<status status="PASS" start="2025-05-07T18:19:14.704094" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:15.179199" level="INFO">Clicking element 'xpath=//div[contains(@class, 'col-3')]/button[contains(@class, 'btn-primary')]'.</msg>
+<msg time="2025-05-07T18:19:14.713097" level="INFO">Clicking element 'xpath=//div[contains(@class, 'col-3')]/button[contains(@class, 'btn-primary')]'.</msg>
 <arg>${TOMBOL_TAMBAH_MEDIA}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:15.178199" elapsed="0.203003"/>
+<status status="PASS" start="2025-05-07T18:19:14.712092" elapsed="0.182001"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:16.383404" level="INFO">Slept 1 second.</msg>
+<msg time="2025-05-07T18:19:15.897088" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:15.382201" elapsed="1.001203"/>
+<status status="PASS" start="2025-05-07T18:19:14.895094" elapsed="1.001994"/>
 </kw>
 <kw name="Choose File" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:16.384406" level="INFO">Sending C:\Users\HERA DWI PRADITA\Pictures\GAMBAR DIMSUM\DIMSUMMENTAI.jpg to browser.</msg>
+<msg time="2025-05-07T18:19:15.898089" level="INFO">Sending C:\Users\HERA DWI PRADITA\Pictures\GAMBAR DIMSUM\DIMSUMMENTAI.jpg to browser.</msg>
 <arg>${FILE_INPUT}</arg>
 <arg>${PATH_FILE}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:16.384406" elapsed="0.125007"/>
+<status status="PASS" start="2025-05-07T18:19:15.898089" elapsed="0.140006"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Upload file DIMSUMMENTAI.jpg done</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-05-03T19:48:16.510410" elapsed="0.000999"/>
+<status status="PASS" start="2025-05-07T18:19:16.039090" elapsed="0.000998"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:21.513043" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-07T18:19:21.041228" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:16.512424" elapsed="5.000619"/>
+<status status="PASS" start="2025-05-07T18:19:16.041087" elapsed="5.000141"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:21.513962" level="INFO">Konten diterbitkan</msg>
+<msg time="2025-05-07T18:19:21.042233" level="INFO">Konten diterbitkan</msg>
 <arg>Konten diterbitkan</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:21.513962" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:19:21.042233" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${TERBITKAN_BUTTON}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-03T19:48:21.514963" elapsed="0.077001"/>
+<status status="PASS" start="2025-05-07T18:19:21.043233" elapsed="0.075015"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:21.593962" level="INFO">Clicking element 'xpath=//button[normalize-space(.)="Terbitkan"]'.</msg>
+<msg time="2025-05-07T18:19:21.119232" level="INFO">Clicking element 'xpath=//button[normalize-space(.)="Terbitkan"]'.</msg>
 <arg>${TERBITKAN_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:21.592962" elapsed="0.179004"/>
+<status status="PASS" start="2025-05-07T18:19:21.119232" elapsed="0.166000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:26.774475" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-05-07T18:19:26.287813" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:21.773961" elapsed="5.000514"/>
+<status status="PASS" start="2025-05-07T18:19:21.287231" elapsed="5.000582"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:26.775393" level="INFO">Tunggu sampai konten berhasil diterbitkan</msg>
+<msg time="2025-05-07T18:19:26.288818" level="INFO">Tunggu sampai konten berhasil diterbitkan</msg>
 <arg>Tunggu sampai konten berhasil diterbitkan</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:26.775393" elapsed="0.000000"/>
+<status status="PASS" start="2025-05-07T18:19:26.288818" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-05-07T18:19:40.608819" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=135.0.7049.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B4745335+78597]
+	GetHandleVerifier [0x00007FF6B4745390+78688]
+	(No symbol) [0x00007FF6B44F91AA]
+	(No symbol) [0x00007FF6B44E4EF5]
+	(No symbol) [0x00007FF6B4509F04]
+	(No symbol) [0x00007FF6B457ED0F]
+	(No symbol) [0x00007FF6B459EBB2]
+	(No symbol) [0x00007FF6B4576EC3]
+	(No symbol) [0x00007FF6B45403F8]
+	(No symbol) [0x00007FF6B4541163]
+	GetHandleVerifier [0x00007FF6B49EEEED+2870973]
+	GetHandleVerifier [0x00007FF6B49E9698+2848360]
+	GetHandleVerifier [0x00007FF6B4A06973+2967875]
+	GetHandleVerifier [0x00007FF6B476017A+188746]
+	GetHandleVerifier [0x00007FF6B476845F+222255]
+	GetHandleVerifier [0x00007FF6B474D2B4+111236]
+	GetHandleVerifier [0x00007FF6B474D462+111666]
+	GetHandleVerifier [0x00007FF6B4733589+5465]
+	BaseThreadInitThunk [0x00007FF9EDEA7E94+20]
+	RtlUserThreadStart [0x00007FF9EE807AD1+33]
+</msg>
+<msg time="2025-05-07T18:19:40.613821" level="FAIL">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=135.0.7049.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B4745335+78597]
+	GetHandleVerifier [0x00007FF6B4745390+78688]
+	(No symbol) [0x00007FF6B44F8FDC]
+	(No symbol) [0x00007FF6B44E623B]
+	(No symbol) [0x00007FF6B44E50FE]
+	(No symbol) [0x00007FF6B4509F04]
+	(No symbol) [0x00007FF6B457ED0F]
+	(No symbol) [0x00007FF6B459EBB2]
+	(No symbol) [0x00007FF6B4576EC3]
+	(No symbol) [0x00007FF6B45403F8]
+	(No symbol) [0x00007FF6B4541163]
+	GetHandleVerifier [0x00007FF6B49EEEED+2870973]
+	GetHandleVerifier [0x00007FF6B49E9698+2848360]
+	GetHandleVerifier [0x00007FF6B4A06973+2967875]
+	GetHandleVerifier [0x00007FF6B476017A+188746]
+	GetHandleVerifier [0x00007FF6B476845F+222255]
+	GetHandleVerifier [0x00007FF6B474D2B4+111236]
+	GetHandleVerifier [0x00007FF6B474D462+111666]
+	GetHandleVerifier [0x00007FF6B4733589+5465]
+	BaseThreadInitThunk [0x00007FF9EDEA7E94+20]
+	RtlUserThreadStart [0x00007FF9EE807AD1+33]
+</msg>
 <arg>xpath=//div[contains(text(),"Penerbitan Konten")]</arg>
 <arg>timeout=25s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:48:26.776411" elapsed="2.422928"/>
+<status status="FAIL" start="2025-05-07T18:19:26.289817" elapsed="14.550997">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=135.0.7049.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B4745335+78597]
+	GetHandleVerifier [0x00007FF6B4745390+78688]
+	(No symbol) [0x00007FF6B44F8FDC]
+	(No symbol) [0x00007FF6B44E623B]
+	(No symbol) [0x00007FF6B44E50FE]
+	(No symbol) [0x00007FF6B4509F04]
+	(No symbol) [0x00007FF6B457ED0F]
+	(No symbol) [0x00007FF6B459EBB2]
+	(No symbol) [0x00007FF6B4576EC3]
+	(No symbol) [0x00007FF6B45403F8]
+	(No symbol) [0x00007FF6B4541163]
+	GetHandleVerifier [0x00007FF6B49EEEED+2870973]
+	GetHandleVerifier [0x00007FF6B49E9698+2848360]
+	GetHandleVerifier [0x00007FF6B4A06973+2967875]
+	GetHandleVerifier [0x00007FF6B476017A+188746]
+	GetHandleVerifier [0x00007FF6B476845F+222255]
+	GetHandleVerifier [0x00007FF6B474D2B4+111236]
+	GetHandleVerifier [0x00007FF6B474D462+111666]
+	GetHandleVerifier [0x00007FF6B4733589+5465]
+	BaseThreadInitThunk [0x00007FF9EDEA7E94+20]
+	RtlUserThreadStart [0x00007FF9EE807AD1+33]
+</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:34.200682" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:29.200338" elapsed="5.000344"/>
+<status status="NOT RUN" start="2025-05-07T18:19:40.840814" elapsed="0.001001"/>
 </kw>
-<status status="PASS" start="2025-05-03T19:48:08.099777" elapsed="26.101826"/>
+<status status="FAIL" start="2025-05-07T18:19:07.616893" elapsed="33.224922">WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=135.0.7049.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B4745335+78597]
+	GetHandleVerifier [0x00007FF6B4745390+78688]
+	(No symbol) [0x00007FF6B44F8FDC]
+	(No symbol) [0x00007FF6B44E623B]
+	(No symbol) [0x00007FF6B44E50FE]
+	(No symbol) [0x00007FF6B4509F04]
+	(No symbol) [0x00007FF6B457ED0F]
+	(No symbol) [0x00007FF6B459EBB2]
+	(No symbol) [0x00007FF6B4576EC3]
+	(No symbol) [0x00007FF6B45403F8]
+	(No symbol) [0x00007FF6B4541163]
+	GetHandleVerifier [0x00007FF6B49EEEED+2870973]
+	GetHandleVerifier [0x00007FF6B49E9698+2848360]
+	GetHandleVerifier [0x00007FF6B4A06973+2967875]
+	GetHandleVerifier [0x00007FF6B476017A+188746]
+	GetHandleVerifier [0x00007FF6B476845F+222255]
+	GetHandleVerifier [0x00007FF6B474D2B4+111236]
+	GetHandleVerifier [0x00007FF6B474D462+111666]
+	GetHandleVerifier [0x00007FF6B4733589+5465]
+	BaseThreadInitThunk [0x00007FF9EDEA7E94+20]
+	RtlUserThreadStart [0x00007FF9EE807AD1+33]
+</status>
 </test>
-<test id="s1-t5" name="Uji Status Konten Dengan Penjadwalan" line="261">
+<test id="s1-t5" name="Uji Status Konten Dengan Penjadwalan" line="259">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:34.205601" level="INFO">Menambah konten dengan penjadwalan</msg>
+<msg time="2025-05-07T18:19:40.848816" level="INFO">Menambah konten dengan penjadwalan</msg>
 <arg>Menambah konten dengan penjadwalan</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:34.204601" elapsed="0.001000"/>
+<status status="PASS" start="2025-05-07T18:19:40.848816" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:34.206602" level="INFO">Clicking element 'xpath=//a[@href="/publishing/add" and contains(text(),"Tambah Konten")]'.</msg>
+<msg time="2025-05-07T18:19:40.850819" level="INFO">Clicking element 'xpath=//a[@href="/publishing/add" and contains(text(),"Tambah Konten")]'.</msg>
+<msg time="2025-05-07T18:19:44.104813" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D9F34D5A60&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/5d6e9edabdb8b8e962f683997d0b1da9/screenshot</msg>
+<msg time="2025-05-07T18:19:46.112819" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D9F34D40B0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/5d6e9edabdb8b8e962f683997d0b1da9/screenshot</msg>
+<msg time="2025-05-07T18:19:48.119813" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D9F34D6300&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/5d6e9edabdb8b8e962f683997d0b1da9/screenshot</msg>
+<msg time="2025-05-07T18:19:50.124813" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=52130): Max retries exceeded with url: /session/5d6e9edabdb8b8e962f683997d0b1da9/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D9F34D6D50&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
 <arg>${TAMBAH_KONTEN_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:34.205601" elapsed="0.244009"/>
+<status status="FAIL" start="2025-05-07T18:19:40.849816" elapsed="9.276999">Execution terminated by signal</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:39.452194" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:34.450607" elapsed="5.001587"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.127817" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:39.454178" level="INFO">Konten diinput</msg>
 <arg>Konten diinput</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:39.453173" elapsed="0.001005"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.128823" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${KONTEN_TEXTAREA}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:48:39.455174" elapsed="0.050005"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.129816" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:39.508179" level="INFO">Typing text 'DIMSUM UDANG MENTAI' into text field 'xpath=//textarea[@placeholder='Ketikan kontennya disini...']'.</msg>
 <arg>${KONTEN_TEXTAREA}</arg>
 <arg>${JUDUL_KONTEN}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:39.507185" elapsed="0.435995"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.129816" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:39.961178" level="INFO">Upload Media</msg>
 <arg>Upload Media</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:39.961178" elapsed="0.001000"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.130816" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:39.965188" level="INFO">Clicking element 'xpath=//div[contains(@class, 'col-3')]/button[contains(@class, 'btn-primary')]'.</msg>
 <arg>${TOMBOL_TAMBAH_MEDIA}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:39.964184" elapsed="0.175993"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.130816" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:41.142759" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:40.141177" elapsed="1.001582"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.131816" elapsed="0.000000"/>
 </kw>
 <kw name="Choose File" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:41.145746" level="INFO">Sending C:\Users\HERA DWI PRADITA\Pictures\GAMBAR DIMSUM\DIMSUMMENTAI.jpg to browser.</msg>
 <arg>${FILE_INPUT}</arg>
 <arg>${PATH_FILE}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:41.144745" elapsed="0.087414"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.131816" elapsed="0.000998"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
 <arg>Upload file DIMSUMMENTAI.jpg done</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-05-03T19:48:41.233159" elapsed="0.006996"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.132814" elapsed="0.001002"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:46.241301" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:41.241157" elapsed="5.000144"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.133816" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:46.242311" level="INFO">Pengaturan jadwal dibuka</msg>
 <arg>Pengaturan jadwal dibuka</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:46.242311" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.134814" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:46.243311" level="INFO">Clicking element 'xpath=//button[@data-bs-target="#ModalFormDate"]'.</msg>
 <arg>${TOMBOL_ATUR_JADWAL}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:46.243311" elapsed="0.172013"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.135832" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:47.417453" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:46.415324" elapsed="1.002129"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.135832" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:47.418448" level="INFO">Tanggal dipilih untuk penjadwalan</msg>
 <arg>Tanggal dipilih untuk penjadwalan</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:47.418448" elapsed="0.000994"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.136848" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:47.421442" level="INFO">Clicking element 'xpath=//input[@placeholder='dd/MM/yyyy HH:mm']'.</msg>
 <arg>${INPUT_JADWAL}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:47.420443" elapsed="0.326003"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.136848" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:52.750114" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:47.748443" elapsed="5.001671"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.137830" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=/html/body/div[3]</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:48:52.751118" elapsed="0.056998"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.138830" elapsed="0.000000"/>
 </kw>
 <kw name="Get Current Date" owner="DateTime">
-<msg time="2025-05-03T19:48:52.810118" level="INFO">${today} = 3</msg>
 <var>${today}</var>
 <arg>result_format=%#d</arg>
 <doc>Returns current local or UTC time with an optional increment.</doc>
-<status status="PASS" start="2025-05-03T19:48:52.809119" elapsed="0.001999"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.138830" elapsed="0.001001"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-05-03T19:48:52.817112" level="INFO">${tanggal_xpath} = //div[contains(@class,"rs-calendar-table")]//div[normalize-space()="3" and not(contains(@class,"rs-calendar-cell-disabled"))]</msg>
 <var>${tanggal_xpath}</var>
 <arg>//div[contains(@class,"rs-calendar-table")]//div[normalize-space()="${today}" and not(contains(@class,"rs-calendar-cell-disabled"))]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-05-03T19:48:52.816115" elapsed="0.000997"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.139831" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=${tanggal_xpath}</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:48:52.818118" elapsed="0.061997"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.140819" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:52.882116" level="INFO">Clicking element 'xpath=//div[contains(@class,"rs-calendar-table")]//div[normalize-space()="3" and not(contains(@class,"rs-calendar-cell-disabled"))]'.</msg>
 <arg>xpath=${tanggal_xpath}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:52.881117" elapsed="0.290999"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.140819" elapsed="0.001003"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:58.175056" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:53.174116" elapsed="5.000940"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.141822" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:58.176056" level="INFO">Konfirmasi penjadwalan selesai</msg>
 <arg>Konfirmasi penjadwalan selesai</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:58.176056" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.142820" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:58.178055" level="INFO">Clicking element 'xpath=//*[@id="ModalFormDate"]/div/div/div[1]/a/span'.</msg>
 <arg>${OK_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:58.177059" elapsed="0.186013"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.143823" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:48:59.366320" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:58.365073" elapsed="1.001247"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.144820" elapsed="0.001004"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:48:59.367318" level="INFO">Konten dijadwalkan</msg>
 <arg>Konten dijadwalkan</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:48:59.367318" elapsed="0.001001"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.145824" elapsed="0.001000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:48:59.369316" level="INFO">Clicking element 'xpath=//button[contains(., "Jadwalkan")]'.</msg>
 <arg>${JADWALKAN_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:48:59.368319" elapsed="0.173996"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.147824" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:49:04.545140" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:48:59.543312" elapsed="5.001828"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.148825" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:04.546141" level="INFO">Pastikan kembali ke halaman utama</msg>
 <arg>Pastikan kembali ke halaman utama</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:04.546141" elapsed="0.001003"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.149823" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//div[contains(text(),"Penerbitan Konten")]</arg>
 <arg>timeout=15s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:49:04.547144" elapsed="0.089999"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:49:09.639629" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:49:04.638145" elapsed="5.001484"/>
-</kw>
-<status status="PASS" start="2025-05-03T19:48:34.203603" elapsed="35.436947"/>
-</test>
-<test id="s1-t6" name="Buat dan Posting Kampanye" line="316">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:09.644548" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[4]/a[1]/div'.</msg>
-<arg>${TAB_Kampanye}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:09.643566" elapsed="0.215991"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${BUTTON_Aktif}</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:49:09.860552" elapsed="0.082005"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:09.943554" level="INFO">Klik tab Kampanye Aktif</msg>
-<arg>Klik tab Kampanye Aktif</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:09.943554" elapsed="0.000998"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:09.945556" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[2]/ul/li[1]/a'.</msg>
-<arg>${BUTTON_Aktif}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:09.944552" elapsed="0.203003"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:10.153558" level="INFO">Klik tombol Tambah Kampanye</msg>
-<arg>Klik tombol Tambah Kampanye</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:10.152557" elapsed="0.001001"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:10.155556" level="INFO">Clicking button 'xpath=//*[@id="aktif"]/div[2]/div[2]/button'.</msg>
-<arg>xpath=//*[@id="aktif"]/div[2]/div[2]/button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:10.154557" elapsed="0.244000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:10.399555" level="INFO">Isi form kampanye</msg>
-<arg>Isi form kampanye</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:10.399555" elapsed="0.001000"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//*[@id="judul"]</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:49:10.401558" elapsed="0.759511"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:11.162071" level="INFO">Typing text 'DIMSUM UDANG MENTAI' into text field 'xpath=//*[@id="judul"]'.</msg>
-<arg>xpath=//*[@id="judul"]</arg>
-<arg>${JUDUL_KONTEN}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:11.162071" elapsed="0.395009"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:11.560073" level="INFO">Typing text 'HANYA CONTOH' into text field 'xpath=//*[@id="inisiator"]'.</msg>
-<arg>xpath=//*[@id="inisiator"]</arg>
-<arg>${INISIATOR}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:11.559074" elapsed="0.297005"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:11.858076" level="INFO">Typing text 'HANYA CONTOH' into text field 'xpath=//input[@id='organisasi']'.</msg>
-<arg>xpath=//input[@id='organisasi']</arg>
-<arg>${ORGANISASI}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:11.857083" elapsed="0.306992"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:12.165070" level="INFO">Typing text 'HANYA CONTOH' into text field 'xpath=//textarea[@name='deskripsi']'.</msg>
-<arg>xpath=//textarea[@name='deskripsi']</arg>
-<arg>${DESKRIPSI}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:12.164075" elapsed="0.295996"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:12.462084" level="INFO">Typing text 'HANYA CONTOH' into text field 'xpath=//*[@id="catatan_internal"]'.</msg>
-<arg>xpath=//*[@id="catatan_internal"]</arg>
-<arg>${CATATAN_INTERNAL}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:12.461072" elapsed="0.398532"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:12.861597" level="INFO">Klik tombol Selanjutnya untuk melanjutkan</msg>
-<arg>Klik tombol Selanjutnya untuk melanjutkan</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:12.861597" elapsed="0.001002"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${BTN_SELANJUTNYA}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:49:12.869598" elapsed="0.123001"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:12.995597" level="INFO">Clicking button 'xpath=//button[contains(., "Selanjutnya")]'.</msg>
-<arg>${BTN_SELANJUTNYA}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:12.994601" elapsed="0.232999"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:13.229598" level="INFO">Isi bagian konten kampanye</msg>
-<arg>Isi bagian konten kampanye</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:13.228598" elapsed="0.001000"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//*[@id="jenis_konten"]</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:49:13.231598" elapsed="0.745489"/>
-</kw>
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:13.979084" level="INFO">Selecting options from selection list 'xpath=//*[@id="jenis_konten"]' by value link.</msg>
-<arg>xpath=//*[@id="jenis_konten"]</arg>
-<arg>link</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2025-05-03T19:49:13.978089" elapsed="0.271000"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:14.255105" level="INFO">Typing text 'https://link.konten.nya' into text field 'xpath=//*[@id="konten_link"]'.</msg>
-<arg>xpath=//*[@id="konten_link"]</arg>
-<arg>${LINK}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:14.253092" elapsed="0.372998"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:14.628088" level="INFO">Typing text 'Link kampanye dimsum lezat, klik sekarang!' into text field 'xpath=//*[@id="copywriting-1"]'.</msg>
-<arg>xpath=//*[@id="copywriting-1"]</arg>
-<arg>Link kampanye dimsum lezat, klik sekarang!</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:14.627091" elapsed="0.423002"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:15.052094" level="INFO">Klik tombol Selanjutnya</msg>
-<arg>Klik tombol Selanjutnya</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:15.052094" elapsed="0.000000"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:15.059092" level="INFO">Clicking button 'xpath=//button[contains(., "Selanjutnya")]'.</msg>
-<arg>${BTN_SELANJUTNYA}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:15.058091" elapsed="0.269000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:15.329091" level="INFO">Menunggu input pencarian tim</msg>
-<arg>Menunggu input pencarian tim</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:15.329091" elapsed="0.001015"/>
-</kw>
-<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
-<arg>${INPUT_PENCARIAN}</arg>
-<arg>timeout=20s</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-03T19:49:15.330106" elapsed="0.783267"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:16.116383" level="INFO">Input nama tim Pencinta Dimsum</msg>
-<arg>Input nama tim Pencinta Dimsum</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:16.115370" elapsed="0.001013"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:16.118380" level="INFO">Typing text 'Pencinta Dimsum' into text field 'xpath=//*[@placeholder="Pencarian..."]'.</msg>
-<arg>${INPUT_PENCARIAN}</arg>
-<arg>Pencinta Dimsum</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:16.117378" elapsed="0.253000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:16.371375" level="INFO">Menunggu label tim muncul</msg>
-<arg>Menunggu label tim muncul</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:16.371375" elapsed="0.000000"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${LABEL_TIM}</arg>
-<arg>timeout=15s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-03T19:49:16.372385" elapsed="0.052991"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:49:17.428649" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:49:16.428381" elapsed="1.000268"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:17.429650" level="INFO">Scroll dan klik label tim Pencinta Dimsum</msg>
-<arg>Scroll dan klik label tim Pencinta Dimsum</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:17.429650" elapsed="0.000000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:17.431644" level="INFO">Executing JavaScript:
-var el = [...document.querySelectorAll('label')].find(e =&gt; e.textContent.includes('Pencinta Dimsum'));if(el){ el.scrollIntoView(); el.click(); }
-Without any arguments.</msg>
-<arg>var el = [...document.querySelectorAll('label')].find(e =&gt; e.textContent.includes('Pencinta Dimsum'));</arg>
-<arg>if(el){ el.scrollIntoView(); el.click(); }</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:49:17.430666" elapsed="0.016986"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:17.450653" level="INFO">Executing JavaScript:
-return document.getElementById("group0")?.checked
-Without any arguments.</msg>
-<msg time="2025-05-03T19:49:17.468648" level="INFO">${is_checked} = True</msg>
-<var>${is_checked}</var>
-<arg>return document.getElementById("group0")?.checked</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:49:17.448650" elapsed="0.019998"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:17.471669" level="INFO">Checkbox Pencinta Dimsum checked: True</msg>
-<arg>Checkbox Pencinta Dimsum checked: ${is_checked}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:17.470653" elapsed="0.001016"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:17.472651" level="INFO">Klik tombol Selanjutnya</msg>
-<arg>Klik tombol Selanjutnya</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:17.472651" elapsed="0.000000"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:17.474670" level="INFO">Clicking button 'xpath=//button[contains(., "Selanjutnya")]'.</msg>
-<arg>${BTN_SELANJUTNYA}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:17.473649" elapsed="0.257003"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:17.732649" level="INFO">Tunggu dan klik tombol Mulai Kampanye</msg>
-<arg>Tunggu dan klik tombol Mulai Kampanye</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:17.731649" elapsed="0.002009"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), "Mulai Kampanye")]</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:49:17.734656" elapsed="0.078992"/>
-</kw>
-<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), "Mulai Kampanye")]</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-05-03T19:49:17.814645" elapsed="0.055999"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:17.874644" level="INFO">Clicking button 'xpath=//button[contains(text(), "Mulai Kampanye")]'.</msg>
-<arg>xpath=//button[contains(text(), "Mulai Kampanye")]</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:17.874644" elapsed="0.209536"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:18.086174" level="INFO">Validasi kampanye berhasil dibuat</msg>
-<arg>Validasi kampanye berhasil dibuat</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:18.085175" elapsed="0.000999"/>
-</kw>
-<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
-<arg>xpath=//*[@id="aktif"]</arg>
-<arg>${JUDUL_KAMPANYE}</arg>
-<arg>timeout=30s</arg>
-<doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2025-05-03T19:49:18.088179" elapsed="2.238677"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:49:22.328063" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:49:20.327853" elapsed="2.000210"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>xpath=//a[@href="#draf"]</arg>
-<arg>timeout=40s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-03T19:49:22.329064" elapsed="0.048006"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:49:24.381415" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:49:22.380068" elapsed="2.001347"/>
-</kw>
-<status status="PASS" start="2025-05-03T19:49:09.642549" elapsed="14.739829"/>
-</test>
-<test id="s1-t7" name="Pindah ke tab Draf" line="396">
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:24.386391" level="INFO">Pindah ke tab Draf</msg>
-<arg>Pindah ke tab Draf</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:24.386391" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:24.387391" level="INFO">Clicking element 'xpath=//a[@href="#draf"]'.</msg>
-<arg>xpath=//a[@href="#draf"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:24.387391" elapsed="0.201990"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:49:26.591718" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:49:24.590382" elapsed="2.001336"/>
-</kw>
-<status status="PASS" start="2025-05-03T19:49:24.384388" elapsed="2.208307"/>
-</test>
-<test id="s1-t8" name="Pindah ke tab Arsip" line="401">
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:26.595695" level="INFO">Pindah ke tab Arsip</msg>
-<arg>Pindah ke tab Arsip</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:26.594713" elapsed="0.001981"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:26.597700" level="INFO">Clicking element 'xpath=//a[@href="#arsip"]'.</msg>
-<arg>xpath=//a[@href="#arsip"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:26.596694" elapsed="0.166005"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:49:28.766423" level="INFO">Slept 2 seconds.</msg>
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:49:26.764699" elapsed="2.001724"/>
-</kw>
-<status status="PASS" start="2025-05-03T19:49:26.593694" elapsed="2.173727"/>
-</test>
-<test id="s1-t9" name="Buka Tab Laporan" line="412">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:28.770417" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[4]/a[5]/div'.</msg>
-<arg>${TAB_NAVIGASI_LAPORAN}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:28.770417" elapsed="0.245558"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${BUTTON_PROFIL_SOSMED}</arg>
-<arg>timeout=35s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:49:29.017977" elapsed="0.070993"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:29.090966" level="INFO">Membuka tab laporan</msg>
-<arg>Membuka tab laporan</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:29.089966" elapsed="0.001000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:29.091967" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[4]/a[5]/div'.</msg>
-<arg>${TAB_NAVIGASI_LAPORAN}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:29.090966" elapsed="0.163009"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:49:34.256951" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:49:29.255972" elapsed="5.000979"/>
-</kw>
-<status status="PASS" start="2025-05-03T19:49:28.768418" elapsed="5.489537"/>
-</test>
-<test id="s1-t10" name="Uji Pilih Facebook Dan Instagram" line="421">
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:34.261953" level="INFO">Klik tombol "Pilih Profil Sosial Media"</msg>
-<arg>Klik tombol "Pilih Profil Sosial Media"</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:34.261953" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:34.262952" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[2]/div/div/div[1]/button'.</msg>
-<arg>${BUTTON_PROFIL_SOSMED}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-03T19:49:34.261953" elapsed="0.197005"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${PILIH_INSTAGRAM}</arg>
-<arg>timeout=15s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-03T19:49:34.459956" elapsed="0.087003"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:49:35.553705" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:49:34.551961" elapsed="1.001744"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:35.554708" level="INFO">Pilih Instagram menggunakan JavaScript</msg>
-<arg>Pilih Instagram menggunakan JavaScript</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:35.554708" elapsed="0.000000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:35.556705" level="INFO">Executing JavaScript:
-document.getElementById("radioAnggotaTim1")?.click()
-Without any arguments.</msg>
-<arg>document.getElementById("radioAnggotaTim1")?.click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:49:35.555707" elapsed="0.030004"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:50.941170" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-582.png"&gt;&lt;img src="selenium-screenshot-582.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-05-03T19:49:50.942168" level="FAIL">Text 'xpath=//div[contains(., 'Data Instagram')]' did not appear in 15 seconds.</msg>
-<arg>${KOMPONEN_DATA_INSTAGRAM}</arg>
-<arg>timeout=15s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="FAIL" start="2025-05-03T19:49:35.587716" elapsed="15.358464">Text 'xpath=//div[contains(., 'Data Instagram')]' did not appear in 15 seconds.</status>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.948169" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Buka kembali modal pilih sosial media</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.949165" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${BUTTON_PROFIL_SOSMED}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.951162" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.951162" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Pilih Facebook menggunakan JavaScript</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.952161" elapsed="0.000000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<arg>document.getElementById("radioAnggotaTim0")?.click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.952161" elapsed="0.000000"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${KOMPONEN_DATA_FACEBOOK}</arg>
-<arg>timeout=15s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.953161" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.953161" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Buka kembali modal pilih sosial media setelah pilih Facebook</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.954167" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${BUTTON_PROFIL_SOSMED}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.954167" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.955163" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Klik tombol silang di modal sosial media untuk kembali ke halaman utama tab laporan</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.956163" elapsed="0.000000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<arg>document.querySelector('#ModalAnggotaTim a')?.click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.957166" elapsed="0.000000"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${TOMBOL_STATUS_KONTEN}</arg>
-<arg>timeout=15s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.957166" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.958160" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Tunggu hingga tombol 'Pilih Status Konten' muncul</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.958160" elapsed="0.000000"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${TOMBOL_STATUS_KONTEN}</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.963163" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.149823" elapsed="0.001000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-05-03T19:49:50.964170" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-05-07T18:19:50.150823" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2025-05-03T19:49:34.258958" elapsed="16.707206">Text 'xpath=//div[contains(., 'Data Instagram')]' did not appear in 15 seconds.</status>
+<status status="FAIL" start="2025-05-07T18:19:40.846816" elapsed="9.305008">Execution terminated by signal</status>
 </test>
-<test id="s1-t11" name="Uji Pemilihan Jenis Laporan" line="464">
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:50.971168" level="INFO">Pastikan tombol dropdown Jenis Laporan muncul</msg>
-<arg>Pastikan tombol dropdown Jenis Laporan muncul</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:50.971168" elapsed="0.000000"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${TOMBOL_STATUS_KONTEN}</arg>
-<arg>timeout=20s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-05-03T19:49:50.972167" elapsed="0.066004"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:51.039165" level="INFO">Klik dropdown Jenis Laporan menggunakan JavaScript</msg>
-<arg>Klik dropdown Jenis Laporan menggunakan JavaScript</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:51.038171" elapsed="0.000994"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:51.041161" level="INFO">Executing JavaScript:
-document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()
-Without any arguments.</msg>
-<arg>document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:49:51.040162" elapsed="0.050006"/>
-</kw>
-<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<arg>${XPATH_OPTION_PEMIRSA}</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-03T19:49:51.091169" elapsed="0.103001"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-05-03T19:49:52.206216" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-05-03T19:49:51.204168" elapsed="1.002048"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-05-03T19:49:52.207134" level="INFO">Pilih jenis laporan "Pemirsa"</msg>
-<arg>Pilih jenis laporan "Pemirsa"</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-05-03T19:49:52.207134" elapsed="0.000000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:49:52.209152" level="INFO">Executing JavaScript:
-document.getElementById("Pemirsa")?.click()
-Without any arguments.</msg>
-<arg>document.getElementById("Pemirsa")?.click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-05-03T19:49:52.208135" elapsed="0.013006"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<msg time="2025-05-03T19:50:02.518048" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-583.png"&gt;&lt;img src="selenium-screenshot-583.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-05-03T19:50:02.518048" level="FAIL">Text 'xpath=//h2[contains(., 'Laporan Pemirsa')]' did not appear in 10 seconds.</msg>
-<arg>${KOMPONEN_LAPORAN_PEMIRSA}</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="FAIL" start="2025-05-03T19:49:52.222143" elapsed="10.297917">Text 'xpath=//h2[contains(., 'Laporan Pemirsa')]' did not appear in 10 seconds.</status>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.522040" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Klik dropdown lagi untuk memilih jenis laporan berikutnya</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.523041" elapsed="0.000000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<arg>document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.527038" elapsed="0.000000"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${KOMPONEN_LAPORAN_KONTEN}</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.528041" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.528041" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Pilih jenis laporan "Konten"</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.529038" elapsed="0.000000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<arg>document.getElementById("Konten")?.click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.530043" elapsed="0.000000"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${KOMPONEN_LAPORAN_KONTEN}</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.531043" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.532040" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Klik dropdown lagi untuk menutup pilihan</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.533037" elapsed="0.000000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<arg>document.evaluate('//*[@id="root"]/div[2]/div/div/div[2]/button', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.533037" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.534037" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Klik tombol silang (x) untuk menutup modal jenis laporan</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.534037" elapsed="0.000000"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${XPATH_BUTTON_SILANG}</arg>
-<arg>timeout=10s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.535047" elapsed="0.000000"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<arg>document.evaluate('//*[@id="modalJenisLaporan"]/div/div/div[1]/a', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.click()</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.536044" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-05-03T19:50:02.537041" elapsed="0.000000"/>
-</kw>
+<test id="s1-t6" name="Buat dan Posting Kampanye" line="314">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-05-07T18:19:50.153818" elapsed="0.001999">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t7" name="Pindah ke tab Draf" line="394">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-05-07T18:19:50.157819" elapsed="0.000996">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t8" name="Pindah ke tab Arsip" line="399">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-05-07T18:19:50.160816" elapsed="0.001004">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t9" name="Buka Tab Laporan" line="410">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-05-07T18:19:50.163822" elapsed="0.002001">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t10" name="Uji Pilih Facebook Dan Instagram Modul Laporan" line="419">
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-05-07T18:19:50.167821" elapsed="0.002003">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t11" name="Uji Pemilihan Jenis Laporan" line="462">
 <doc>Menguji pemilihan jenis laporan dari dropdown, memilih opsi, dan menutup modal</doc>
-<status status="FAIL" start="2025-05-03T19:49:50.969168" elapsed="11.568879">Text 'xpath=//h2[contains(., 'Laporan Pemirsa')]' did not appear in 10 seconds.</status>
+<tag>robot:exit</tag>
+<status status="FAIL" start="2025-05-07T18:19:50.172821" elapsed="0.001995">Test execution stopped due to a fatal error.</status>
 </test>
-<status status="FAIL" start="2025-05-03T19:47:02.007886" elapsed="180.533156"/>
+<status status="FAIL" start="2025-05-07T18:17:44.283378" elapsed="125.920441"/>
 </suite>
 <statistics>
 <total>
-<stat pass="9" fail="2" skip="0">All Tests</stat>
+<stat pass="3" fail="8" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat info="combined" combined="NOT robot:exit" pass="3" fail="2" skip="0">NOT robot:exit</stat>
 </tag>
 <suite>
-<stat name="ModulKampanye Penerbitan Laporan" id="s1" pass="9" fail="2" skip="0">ModulKampanye Penerbitan Laporan</stat>
+<stat name="ModulKampanye Penerbitan Laporan" id="s1" pass="3" fail="8" skip="0">ModulKampanye Penerbitan Laporan</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-05-03T19:49:34.259955" level="WARN">Multiple tests with name 'Uji Pilih Facebook Dan Instagram' executed in suite 'ModulKampanye Penerbitan Laporan'.</msg>
+<msg time="2025-05-07T18:19:40.608819" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=135.0.7049.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B4745335+78597]
+	GetHandleVerifier [0x00007FF6B4745390+78688]
+	(No symbol) [0x00007FF6B44F91AA]
+	(No symbol) [0x00007FF6B44E4EF5]
+	(No symbol) [0x00007FF6B4509F04]
+	(No symbol) [0x00007FF6B457ED0F]
+	(No symbol) [0x00007FF6B459EBB2]
+	(No symbol) [0x00007FF6B4576EC3]
+	(No symbol) [0x00007FF6B45403F8]
+	(No symbol) [0x00007FF6B4541163]
+	GetHandleVerifier [0x00007FF6B49EEEED+2870973]
+	GetHandleVerifier [0x00007FF6B49E9698+2848360]
+	GetHandleVerifier [0x00007FF6B4A06973+2967875]
+	GetHandleVerifier [0x00007FF6B476017A+188746]
+	GetHandleVerifier [0x00007FF6B476845F+222255]
+	GetHandleVerifier [0x00007FF6B474D2B4+111236]
+	GetHandleVerifier [0x00007FF6B474D462+111666]
+	GetHandleVerifier [0x00007FF6B4733589+5465]
+	BaseThreadInitThunk [0x00007FF9EDEA7E94+20]
+	RtlUserThreadStart [0x00007FF9EE807AD1+33]
+</msg>
+<msg time="2025-05-07T18:19:44.104813" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D9F34D5A60&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/5d6e9edabdb8b8e962f683997d0b1da9/screenshot</msg>
+<msg time="2025-05-07T18:19:46.112819" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D9F34D40B0&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/5d6e9edabdb8b8e962f683997d0b1da9/screenshot</msg>
+<msg time="2025-05-07T18:19:48.119813" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D9F34D6300&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/5d6e9edabdb8b8e962f683997d0b1da9/screenshot</msg>
+<msg time="2025-05-07T18:19:50.124813" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: HTTPConnectionPool(host='localhost', port=52130): Max retries exceeded with url: /session/5d6e9edabdb8b8e962f683997d0b1da9/screenshot (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000001D9F34D6D50&gt;: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))</msg>
 </errors>
 </robot>
